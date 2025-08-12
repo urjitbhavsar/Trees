@@ -1,0 +1,245 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*header*/
+
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+.logo.left-logo,
+.logo.right-logo {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #CBDBAE; /* soft green */
+  box-shadow: 0 0 8px #CBDBAE;
+}
+
+.headings {
+  flex: 1;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #273244; /* deep navy */
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.headings-subtitle {
+  color: #5798A1; /* teal */
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .site-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .logo.left-logo,
+  .logo.right-logo {
+    max-width: 70px;
+    margin: 0 auto;
+  }
+  .headings {
+    font-size: 1.1rem;
+  }
+  .headings-subtitle {
+    font-size: 0.85rem;
+  }
+}
+
+.headings_2 {
+  text-align: center;
+  color: #55dde0; /* deep navy */
+  margin: 20px 0 40px 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  margin: 8px 0;
+}
+
+
+
+/* Page container */
+.page {
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  padding: 25px 20px;
+background: linear-gradient(135deg, #FFFFFF, #87CBB9);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  color: #273244; /* dark navy text */
+  line-height: 1.6;
+}
+
+/* Title */
+.tree-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.8rem;
+  color: #E77144; /* warm orange */
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px #5798A1; /* teal shadow */
+}
+
+/* Sections spacing */
+section {
+  margin-bottom: 30px;
+}
+
+/* Tree Image */
+.tree-image {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.tree-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 5px solid #CBDBAE; /* soft green border */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.tree-image figcaption {
+  margin-top: 8px;
+  font-style: italic;
+  color: #5798A1;
+  font-size: 0.9rem;
+}
+
+/* Paragraphs */
+.page p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Strong and Emphasis */
+.page strong {
+  color: #E77144;
+  font-weight: 700;
+}
+
+.page em {
+  font-style: italic;
+  color: #273244;
+}
+
+/* Headings inside sections */
+.page h2 {
+  color: #273244;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  border-bottom: 3px solid #E77144;
+  padding-bottom: 6px;
+  font-weight: 700;
+}
+
+/* Lists */
+ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  color: #273244;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+/* Safety Note section */
+.note p {
+  font-weight: 600;
+  color: #273244;
+  background-color: #ECCC7E;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 2px solid #E77144;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .headings_2 {
+    font-size: 1.3rem;
+  }
+  .headings_2 h2 {
+    font-size: 1.2rem;
+  }
+  .tree-title {
+    font-size: 2.2rem;
+  }
+  .page {
+    padding: 20px 15px;
+  }
+  .page p, ul li {
+    font-size: 1rem;
+  }
+}
+
+
+/* footer*/
+footer {
+  background-color: #273244; /* deep navy */
+  color: #ECCC7E; /* soft golden */
+  text-align: center;
+  padding: 15px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.4;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+footer a {
+  color: #ECCC7E;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 5px 12px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #E77144; /* warm orange on hover */
+  text-decoration: underline;
+}
+
+footer i.fas.fa-envelope {
+  color: #D44638; /* keep email icon red */
+}
+
+footer i.fab.fa-instagram {
+  color: #E1306C; /* keep instagram icon pink */
+}
+
+/* Responsive: stack links on small screens */
+@media (max-width: 500px) {
+  footer a {
+    display: block;
+    margin: 8px 0;
+  }
+}
